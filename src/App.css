@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+p,
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +52,165 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom Styles */
+
+.hb-header .row {
+  height: 86px;
+}
+.hb-header {
+  height: 86px;
+}
+.site-nav {
+  list-style: none;
+  display: inherit;
+}
+.site-nav li {
+  line-height: 86px;
+  height: 86px;
+  background: #000;
+  margin-right: 10px;
+  padding: 0 20px;
+}
+
+.hb-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+.hb-header nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #eee;
+  font-size: 17px;
+}
+
+.hb-iconer {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  -moz-transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    box-shadow 0.3s;
+  -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    box-shadow 0.3s;
+  -o-transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    box-shadow 0.3s;
+  -ms-transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    box-shadow 0.3s;
+  margin-top: -63px;
+  margin-bottom: 0px;
+}
+
+.introbox {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px;
+  background-color: #fff;
+  transition: all 300ms ease 0s;
+  -webkit-box-shadow: 0px 5px 83px 0 rgba(40, 40, 40, 0.12);
+  -khtml-box-shadow: 0px 5px 83px 0 rgba(40, 40, 40, 0.12);
+  -moz-box-shadow: 0px 5px 83px 0 rgba(40, 40, 40, 0.12);
+  -ms-box-shadow: 0px 5px 83px 0 rgba(40, 40, 40, 0.12);
+  -o-box-shadow: 0px 5px 83px 0 rgba(40, 40, 40, 0.12);
+  box-shadow: 0px 5px 83px 0 rgba(40, 40, 40, 0.12);
+  border-radius: inherit;
+}
+.introbox_small_heading {
+  font-size: 13px;
+  color: #9b9b9b;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 5px;
+}
+.introbox-icon {
+  color: #03ac13;
+  font-size: 40px;
+  margin: 0 5px 0 0;
+  bottom: 7px;
+  position: relative;
+}
+.introbox_content {
+  padding-left: 12px;
+}
+.introbox_text p {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.introbox_text {
+  font-size: 16px;
+}
+.pad-0 {
+  padding: 0;
+}
+.hb-first {
+  border-radius: 10px 0 0 10px;
+}
+.hb-last {
+  border-radius: 0 10px 10px 0;
+}
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #03ac13;
+  border-radius: 5px;
+  color: #212529;
+  display: block;
+  font-size: 16px;
+  padding: 12px 40px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+button a {
+  color: #212529;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover,
+button:hover a {
+  color: #fff;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  background: #03ac13;
+  height: 103%;
+  left: -54%;
+  top: -1px;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+  z-index: 1;
+}
+
+.btn-5:hover:after {
+  height: 120%;
+  width: 160%;
+}
+.btn-5 a {
+  z-index: 2;
+  position: relative;
 }

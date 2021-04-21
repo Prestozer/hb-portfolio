@@ -1,0 +1,44 @@
+.hb-banner {
+  background: #eee;
+}
+.hb-banner h3 {
+  background: #eee;
+}
+.hb-titler {
+  font-size: 40px;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+.hb-titler h3::after {
+  background: url(https://www.demo.hutbytes.com/logistics/wp-content/themes/logistics/images/default-title.png)
+    center center no-repeat;
+  content: "";
+  display: block;
+  width: 87px;
+  height: 20px;
+  left: 0px;
+  margin: 10px auto auto 0;
+  position: absolute;
+}
+.hb-banner h4 {
+  background: #eee;
+}
+.hb-banner p {
+  background: #eee;
+}
+.hb-description {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.section-banner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.hb-small-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  color: #03ac13;
+  padding-bottom: 10px;
+}

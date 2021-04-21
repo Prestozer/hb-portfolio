@@ -1,16 +1,17 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Button from "react-bootstrap/Button";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { createBrowserHistory } from "history";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Home } from "./components/Home";
-import { Contact } from "./components/Contact";
+import "./App.css";
+import AppRoutes from "./components/AppRoutes";
+
+const history = createBrowserHistory();
 
 function App() {
   return (
-    <div className="hb-banner">
-      <Home />
-      <Button>Call Us Now</Button>
-    </div>
+    <Router history={history}>
+      <AppRoutes />
+    </Router>
   );
 }
 
